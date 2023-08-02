@@ -14,6 +14,8 @@ Python.org Official Documentation: https://docs.python.org/3/tutorial/
 How to Install Python on Windows, Mac, and Linux: https://realpython.com/installing-python/
 Python Development Environment Setup: https://realpython.com/python-development-environment-setup/
 
+Python for Beginners - Full Course: https://www.youtube.com/watch?v=eWRfhZUzrAc
+
 ### Week 2: Python Data Structures and Control Flow
 
 Explore Python data structures like lists, dictionaries, tuples, and sets.
