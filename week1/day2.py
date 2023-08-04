@@ -1,4 +1,10 @@
 from enum import Enum
+# from dog import bark  # just imports what you want
+# import dog  # either one works
+from lib import dog
+
+# dog.bark()
+dog.bark()
 
 # ternary operator
 
@@ -8,7 +14,7 @@ def is_adult(age):
 
 
 # Strings
-#print("""My name is Rob""")
+# print("""My name is Rob""")
 
 # Built in methods
 # .upper .lower
@@ -18,7 +24,7 @@ def is_adult(age):
 # find() fin the position of a substring
 name = "mowglie"
 # print("rob".upper())
-#print("captain mowglie".title())
+# print("captain mowglie".title())
 # print("ow" in name)  # True
 
 print(name[-1])  # e
@@ -40,8 +46,8 @@ class Day(Enum):
 # print(list(Day))  # prints list
 # print(len(Day))  # 5
 
-#age = input("What is your age? ")
-#print("Your age is " + age)
+# age = input("What is your age? ")
+# print("Your age is " + age)
 
 
 # Lists
@@ -137,7 +143,7 @@ def talk(phrase):
         say(word)
 
 
-#talk("I am going to have a beer tonight")
+# talk("I am going to have a beer tonight")
 
 
 def counter():
