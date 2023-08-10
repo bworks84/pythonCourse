@@ -25,6 +25,8 @@ Resources:
 - Python Data Structures Tutorial: https://realpython.com/python-data-types/
 - Python Control Flow Statements: https://www.w3schools.com/python/python_conditions.asp
 
+- Python Object Oriented Programming (OOP) - For Beginners: https://www.youtube.com/watch?v=JeznW_7DlB0&t=720s
+
 ### Week 3: File Handling and Modules
 
 Understand how to read and write files in Python.
