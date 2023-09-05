@@ -30,7 +30,7 @@ val2 = float(parameters[2])
 # switch statement
 # required installing python@3.10
 # followed directions from freecodecamp listed in assignment
-print(sys.version)
+# print(sys.version)
 
 match operator:
     case "+":

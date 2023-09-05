@@ -31,6 +31,37 @@ print(new_string)
 
 ##################################
 
+vals = [0, 1, 2]
+vals.insert(0, 1)
+print(vals)
+del vals[1]
+
+print(vals)
+
+z = 10
+y = 0
+x = y < z and z > y or y > z and z < y
+print(x)
+
+i = 0
+while i <= 5:
+    i += 1
+    if i % 2 == 0:
+        break
+    print("*")
+
+my_list = [3, 1, -2]
+print(my_list[my_list[-1]])
+
+t = [[3-i for i in range(3)] for j in range(3)]
+s = 0
+for i in range(3):
+    s += t[i][i]
+    print(s)
+print(s)
+
+##################################
+
 # Example 1
 # word = "Python"
 # for letter in word:
