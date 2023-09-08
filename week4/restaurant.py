@@ -13,27 +13,27 @@ Prompt the user for the tip amount (Suggesting a value equal to 18 percent of th
 Display the meal cost, tax amount, tip amount, and total bill on the screen
 """
 
-print("The cost for your meal is $32.95")
-costOfMeal = 32.95
+cost_of_meal = float(input("Enter the cost of your meal\n"))
+print(f"You entered ${cost_of_meal} as the cost of your meal")
 mealTax = .0675
-mealPlusTax = []
+meal_plus_tax = []
 
 
-def computeTax(num, mealTax):
-    tax = round(num * mealTax, 2)
-    totalCost = tax + num
-    mealPlusTax.append(totalCost)
-    return f"The amount of tax on your meal is ${tax}."
+def computeTax(cost_of_meal, mealTax):
+    tax = round(cost_of_meal * mealTax, 2)
+    meal_plus_tax_result = tax + cost_of_meal
+    meal_plus_tax.append(meal_plus_tax_result)
 
-    # print(mealPlusTax)
+    return f"The amount of tax on your meal is ${tax}, based on a {mealTax * 100}% sales tax"
+
 
 # Goal: don't rewrite code from computeTax func. Add totalCost to global variable that holds value in list, then use that element from variable in next function to calculate tip. Return f string to make dynamic.
 
 
 def computeTip(x):
-    tip = round(mealPlusTax[0] * .18, 2)
-    return f"We suggest a tip of 18 percent, which would be ${tip}. If you are so generous, that would bring the total to ${mealPlusTax[0] + tip}. "
+    tip = round(meal_plus_tax[0] * .18, 2)
+    return f"We suggest a tip of 18 percent, which would be a ${tip} tip. If you are so generous, that would bring the total to ${meal_plus_tax[0] + tip}. "
 
 
-print(computeTax(costOfMeal, mealTax))
-print(computeTip(mealPlusTax))
+print(computeTax(cost_of_meal, mealTax))
+print(computeTip(cost_of_meal))

@@ -60,6 +60,7 @@ def find_all_weights(x):
         # new_weight = float(value) * int(weight)
         new_weight = round(int(weight) * float(value), 2)
         print(f"{first_name}, your weight on {key} would be {new_weight} pounds")
+    return "Crazy huh?"
 
 
 print(find_all_weights(weight))

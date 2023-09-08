@@ -17,8 +17,8 @@ hours_traveled = int(input("How many hours has it been traveling?\n"))
 
 headings = ["Hours", "Distance Traveled"]
 
-
-print(*headings, sep="     ")
+print("\n")
+print(*headings, sep="   ")
 print("----------------------------")
 
 # loop through list and calculate distance traveled

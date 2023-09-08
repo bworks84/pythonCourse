@@ -41,9 +41,9 @@ else:
     if z**2 == (x**2) + (y**2):
         print("Those lengths make a right triangle!")  # ex 12 35 37
     elif x == y and x == z:
-        print("Those lengths make an isosceles triangle!")  # ex 3 3 6
-    elif x == y or y == z or x == z:
-        print("Those lengths make an equilateral triangle!")  # 4 4 4
+        print("Those lengths make an equilateral triangle!")  # ex 3 3 3
+    elif x == y or x == z:
+        print("Those lengths make an isosceles triangle!")  # 4 4 7
     else:
         print("That might be a scalene or obtuse triangle....")
 
