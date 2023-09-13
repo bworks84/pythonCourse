@@ -26,25 +26,24 @@ Time	Distance
 15	52.0
 
 """
-# g = 9.8
+g = 9.8
 
-# time_Seconds = int(input("Enter a time in seconds\n"))
+time_Seconds = int(input("Enter a time in seconds\n"))
 
-
-# def fallingDistance(time_Seconds):
-#     d = 0.5 * g * (time_Seconds ** 2)
-#     return d
+# distance_traveled = 1/2 * gravity rate * (input time in seconds squared)
 
 
-# d = int(time_Seconds / 2)
-
-# print("Secs\tDistance")
-# # thinking of way to give better range output based on input
-# for i in range(d):
-#     # calculates time in increments of 5 (seconds) -> 0 + 1 = 1 * 5
-#     time = (i + 1) * 5
-#     # formatting the print statement, rounding the calc of func by 2 places
-#     print(str(time) + "\t" + str(round(fallingDistance(time), 2)))
+def fallingDistance(time_Seconds):
+    distance_traveled = 0.5 * g * (time_Seconds ** 2)
+    return distance_traveled
 
 
-# ___________________________________________________________________________
+distance_traveled = int(time_Seconds / 2)
+
+print("Secs\tDistance")
+# used d to give better range of time/distance than just 5
+for i in range(d):
+    # calculates time in increments of 5 (seconds) -> 0 + 1 = 1 * 5
+    time = (i + 1) * 5
+    # formatting the print statement, rounding the calc of func by 2 places
+    print(str(time) + "\t" + str(round(fallingDistance(time), 2)))

@@ -18,8 +18,9 @@ hours_traveled = int(input("How many hours has it been traveling?\n"))
 headings = ["Hours", "Distance Traveled"]
 
 print("\n")
+# print headings and separate with 5 blank spaces for formatting
 print(*headings, sep="   ")
-print("----------------------------")
+print("----------------------------")  # added for formatting and readability
 
 # loop through list and calculate distance traveled
 if vehicle_speed < 0 or hours_traveled < 0:

@@ -36,6 +36,7 @@ def bubbleSort(sorted_list):
         # call plotBars subroutine
         for inner_index in range(0, len(sorted_list) - outer_index - 1):
             if sorted_list[inner_index] > sorted_list[inner_index + 1]:
+                # print('Temp: ', temp)
                 temp = sorted_list[inner_index]
                 sorted_list[inner_index] = sorted_list[inner_index+1]
                 sorted_list[inner_index+1] = temp
@@ -52,3 +53,12 @@ bubbleSort(another_list)
 print("The data was:", another_list)
 
 print()
+
+
+# breaking down bubble sort:
+# line 35: iterate through elements of sorted list, starting at 0 to the length of the sorted list - 1
+# line 37: iterate through elements of sorted list, from 0 to length of sorted list - outer_index - 1, to reduce the number of comparisons each pass, because after each round the largest unsorted element bubbles up to the end of the list, so we don't need to compare it again
+# line 38: inside the inner loop, this conditional statmenet checks if the current element [inner_index] is greater than the next element [inner_index + 1]
+# line 39: temp = if the current element is greater than the next element, temp stores the value
+# line 40: swap the current elemtn sorted_list[inner_index] with the next element sorted_list[inner_index+1]
+# line 41: swaps the value stored in temp to the next position in the list sorted_list[inner_index + 1]

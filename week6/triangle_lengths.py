@@ -8,9 +8,10 @@ Assignment: Module 3 - Triangle Lengths
 Purpose: Determine different types of triangles based on user inputs 
 
 '''
-
+# distances variable holds the value of the input from user, the input will be split() into a list of 3 string values
+# it will then map() or iterate over the list and convert each string to an integer
 distances = list(
-    map(int, input("Please enter three lengths above zero for a triangle. ").split()))
+    map(int, input("Please enter three lengths above zero for a triangle. Separate each length by a space. ").split()))
 print("Distances: ", distances)
 
 # sort to make first calculation of 'if triangle' more simple
@@ -33,6 +34,7 @@ def not_zero_length(x, y, z):
         return True
 
 
+# run the filter function to ensure lengths are above zero
 not_zero_length(x, y, z)
 
 if x + y <= z:
